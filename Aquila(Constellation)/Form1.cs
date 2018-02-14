@@ -24,6 +24,18 @@ namespace Aquila_Constellation_
             InitializeComponent();
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //Front Of Card
+            //Front Page contains a title, your name, and background design
+            Graphics g = this.CreateGraphics();
+            g.Clear(Color.Red);
+            Font drawFont = new Font("Arial", 25, FontStyle.Bold);
+            SolidBrush drawBrush = new SolidBrush(Color.Red);
+            Pen drawPen = new Pen(Color.Red, 10);
+            g.DrawString("Hello", drawFont, drawBrush, 50, 40);
+
+        }
         private void Form1_Click(object sender, EventArgs e)
         {
             //Clear 
@@ -43,16 +55,6 @@ namespace Aquila_Constellation_
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            //Front Of Card
-            //Front Page contains a title, your name, and background design
-            Graphics g = this.CreateGraphics();
-            Font drawFont = new Font("Arial", 16, FontStyle.Bold);
-            SolidBrush drawBrush = new SolidBrush(Color.Red);
-            Pen drawPen = new Pen(Color.Red, 10);
-            g.DrawString("Hello", drawFont, drawBrush, 50, 40);
-
-        }
+       
     }
 }
