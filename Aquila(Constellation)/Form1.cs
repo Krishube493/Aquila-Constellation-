@@ -32,7 +32,7 @@ namespace Aquila_Constellation_
             Graphics g = this.CreateGraphics();
             Font drawFont = new Font("Arial", 25, FontStyle.Bold);
             SolidBrush drawBrush = new SolidBrush(Color.White);
-            Pen drawPen = new Pen(Color.Red, 1);
+            Pen drawPen = new Pen(Color.White, 3);
             g.Clear(Color.Black);
             Thread.Sleep(300);
             //Number1 star
@@ -65,7 +65,10 @@ namespace Aquila_Constellation_
             //Number6 star
             g.FillEllipse(drawBrush, 313, 355, 18, 18);
             Thread.Sleep(300);
+            //Draw line from star1 to star7
             g.DrawLine(drawPen, 138, 138, 120, 180);
+            //Draw line from star1 to star2
+            g.DrawLine(drawPen, 138, 138, 161, 120);
 
 
             //Inside Of Card
