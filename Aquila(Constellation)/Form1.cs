@@ -24,27 +24,34 @@ namespace Aquila_Constellation_
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            //Front Of Card
-            //Front Page contains a title, your name, and background design
-            Graphics g = this.CreateGraphics();
-            g.Clear(Color.Red);
-            Font drawFont = new Font("Arial", 25, FontStyle.Bold);
-            SolidBrush drawBrush = new SolidBrush(Color.Red);
-            Pen drawPen = new Pen(Color.Red, 10);
-            g.DrawString("Hello", drawFont, drawBrush, 50, 40);
-
-        }
         private void Form1_Click(object sender, EventArgs e)
         {
-            //Clear 
+            //Create Stars 
+            AquilaT.Visible = false;
+            MyName.Visible = false;
             Graphics g = this.CreateGraphics();
-            Font drawFont = new Font("Arial", 16, FontStyle.Bold);
-            SolidBrush drawBrush = new SolidBrush(Color.Red);
+            Font drawFont = new Font("Arial", 25, FontStyle.Bold);
+            SolidBrush drawBrush = new SolidBrush(Color.White);
             Pen drawPen = new Pen(Color.Red, 10);
             g.Clear(Color.Black);
-            
+            Thread.Sleep(300);
+            //Number1 star
+            g.FillEllipse(drawBrush, 130, 130, 18, 18);
+            Thread.Sleep(300);
+            //Number2 star 
+            g.FillEllipse(drawBrush, 153, 112, 16, 16);
+            Thread.Sleep(300);
+            //Number 7 star
+            g.FillEllipse(drawBrush, 112, 172, 14, 14);
+            Thread.Sleep(300);
+            //Number 3 star
+            g.FillEllipse(drawBrush, 312, 51, 17, 17);
+            Thread.Sleep(300);
+            //Number9 star
+            g.FillEllipse(drawBrush, 340, 31, 12, 12);
+            Thread.Sleep(300);
+
+
             //Inside Of Card
             // drawn graphics and text describing chosen constellation, At least 2 different fonts used. 
             //At least 3 different colours used.
