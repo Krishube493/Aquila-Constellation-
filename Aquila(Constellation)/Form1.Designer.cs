@@ -56,7 +56,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Lavender;
-            this.ClientSize = new System.Drawing.Size(493, 342);
+            this.ClientSize = new System.Drawing.Size(484, 461);
             this.Controls.Add(this.MyName);
             this.Controls.Add(this.AquilaT);
             this.ForeColor = System.Drawing.SystemColors.Control;
