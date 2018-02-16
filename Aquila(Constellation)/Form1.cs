@@ -35,59 +35,62 @@ namespace Aquila_Constellation_
             Pen drawPen = new Pen(Color.White, 3);
             g.Clear(Color.Black);
             Thread.Sleep(300);
-            //Number1 star
+            //Draw stars in order of 1,2,7,3,9,5,8,4,10,6
             g.FillEllipse(drawBrush, 130, 130, 18, 18);
-            Thread.Sleep(300);
-            //Number2 star 
+            Thread.Sleep(300);           
             g.FillEllipse(drawBrush, 153, 112, 16, 16);
-            Thread.Sleep(300);
-            //Number 7 star
+            Thread.Sleep(300);           
             g.FillEllipse(drawBrush, 112, 172, 14, 14);
             Thread.Sleep(300);
-            //Number 3 star
             g.FillEllipse(drawBrush, 312, 51, 17, 17);
             Thread.Sleep(300);
-            //Number9 star
             g.FillEllipse(drawBrush, 340, 31, 12, 12);
             Thread.Sleep(300);
-            //Number5 star 
             g.FillEllipse(drawBrush, 232, 223, 18, 18);
             Thread.Sleep(300);
-            //Number8 star 
             g.FillEllipse(drawBrush, 126, 259, 14, 14);
             Thread.Sleep(300);
-            //Number4 star 
             g.FillEllipse(drawBrush, 48, 290, 14, 14);
             Thread.Sleep(300);
-            //Number10 star
             g.FillEllipse(drawBrush, 190, 297, 12, 12);
             Thread.Sleep(300);
-            //Number6 star
             g.FillEllipse(drawBrush, 313, 355, 18, 18);
             Thread.Sleep(300);
-            //Draw line from star1 to star7 2
+
+            //Sound effect 
+
+            //Draw line from star1 to star7,2
             g.DrawLine(drawPen, 138, 138, 120, 180);
             g.DrawLine(drawPen, 138, 138, 161, 120);
-            //Draw line from star5 to star 2 3 8 and 6
+
+            //Draw line from star5 to star2,3,8,6
             g.DrawLine(drawPen, 239, 229, 161, 120);
             g.DrawLine(drawPen, 239, 229, 319, 55);
             g.DrawLine(drawPen, 239, 229, 129, 265);
             g.DrawLine(drawPen, 239, 229, 319, 358);
-            //Draw line from star3 to star 6 and 9
+
+            //Draw line from star3 to star6,9
             g.DrawLine(drawPen, 319, 55, 319, 358);
             g.DrawLine(drawPen, 319, 55, 345, 35);
-            //Draw line from star10 to star 4 and 6
+
+            //Draw line from star10 to star4,6
             g.DrawLine(drawPen, 190, 300, 50, 300);
             g.DrawLine(drawPen, 190, 300, 319, 358);
-            //Draw line from star 8 to star 4
+
+            //Draw line from star8 to star4
             g.DrawLine(drawPen, 129, 265, 50, 300);
 
-            //Inside Of Card
-            // drawn graphics and text describing chosen constellation, At least 2 different fonts used. 
-            //At least 3 different colours used.
-            //Display some nicely formatted text with a paragraph about the constellation.
-            //Include multiple sounds and timing events. You choose when and how.
-            //At least 2 timing effects. (e.g. flashing stars, text appearing one line at a time, etc.).
+            //Sound effect 
+
+            //Change colours of stars and lines connecting 
+            
+            drawPen.Color = Color.Red;
+            drawBrush.Color = Color.Red;
+
+            //Paragraph about Aquila coming in one line at a time using 2 diffrent fonts 
+
+            //At least 3 different colours used.      
+         
 
         }
 
