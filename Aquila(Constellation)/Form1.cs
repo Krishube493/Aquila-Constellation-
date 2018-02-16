@@ -65,11 +65,22 @@ namespace Aquila_Constellation_
             //Number6 star
             g.FillEllipse(drawBrush, 313, 355, 18, 18);
             Thread.Sleep(300);
-            //Draw line from star1 to star7
+            //Draw line from star1 to star7 2
             g.DrawLine(drawPen, 138, 138, 120, 180);
-            //Draw line from star1 to star2
             g.DrawLine(drawPen, 138, 138, 161, 120);
-
+            //Draw line from star5 to star 2 3 8 and 6
+            g.DrawLine(drawPen, 239, 229, 161, 120);
+            g.DrawLine(drawPen, 239, 229, 319, 55);
+            g.DrawLine(drawPen, 239, 229, 129, 265);
+            g.DrawLine(drawPen, 239, 229, 319, 358);
+            //Draw line from star3 to star 6 and 9
+            g.DrawLine(drawPen, 319, 55, 319, 358);
+            g.DrawLine(drawPen, 319, 55, 345, 35);
+            //Draw line from star10 to star 4 and 6
+            g.DrawLine(drawPen, 190, 300, 50, 300);
+            g.DrawLine(drawPen, 190, 300, 319, 358);
+            //Draw line from star 8 to star 4
+            g.DrawLine(drawPen, 129, 265, 50, 300);
 
             //Inside Of Card
             // drawn graphics and text describing chosen constellation, At least 2 different fonts used. 
