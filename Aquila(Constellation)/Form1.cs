@@ -29,7 +29,7 @@ namespace Aquila_Constellation_
             //Create Stars 
             //Make Front False when front is created!!!!!!!!!
             Graphics g = this.CreateGraphics();
-            Font drawFont = new Font("Arial", 25, FontStyle.Bold);
+            Font drawFont = new Font("Copperplate Gothic Bold", 20, FontStyle.Bold);
             SolidBrush drawBrush = new SolidBrush(Color.White);
             Pen drawPen = new Pen(Color.White, 3);
             g.Clear(Color.Black);
@@ -186,10 +186,12 @@ namespace Aquila_Constellation_
             g.DrawLine(drawPen, 190, 300, 50, 300);
             g.DrawLine(drawPen, 190, 300, 319, 358);
             g.DrawLine(drawPen, 129, 265, 50, 300);
-            Thread.Sleep(2000);
+            Thread.Sleep(1000);
 
             //Paragraph About Aquila with 2 Diffrent Fonts 
-
+            g.DrawString("Aquila, The Eagle", drawFont, drawBrush, 367, 25);
+            drawFont = new Font("Lobster", 14, FontStyle.Bold);
+            g.DrawString("e", drawFont, drawBrush, 367, 100);
         }
 
     }
