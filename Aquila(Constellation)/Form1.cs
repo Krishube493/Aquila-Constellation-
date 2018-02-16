@@ -57,7 +57,7 @@ namespace Aquila_Constellation_
             g.FillEllipse(drawBrush, 313, 355, 18, 18);
             Thread.Sleep(300);
 
-            //Sound effect 
+            //Sound effect!!!!!!!!!
 
             //Draw line from star1 to star7,2
             g.DrawLine(drawPen, 138, 138, 120, 180);
@@ -80,18 +80,116 @@ namespace Aquila_Constellation_
             //Draw line from star8 to star4
             g.DrawLine(drawPen, 129, 265, 50, 300);
 
-            //Sound effect 
+            //Sound effect!!!!!!!!!!!!!
 
-            //Change colours of stars and lines connecting 
-            
+            //Change colours of stars and lines
+            Thread.Sleep(300);
+            Refresh();
+            g.Clear(Color.Black);
             drawPen.Color = Color.Red;
             drawBrush.Color = Color.Red;
+            g.FillEllipse(drawBrush, 130, 130, 18, 18);
+            g.FillEllipse(drawBrush, 153, 112, 16, 16);
+            g.FillEllipse(drawBrush, 112, 172, 14, 14);
+            g.FillEllipse(drawBrush, 312, 51, 17, 17);
+            g.FillEllipse(drawBrush, 340, 31, 12, 12);
+            g.FillEllipse(drawBrush, 232, 223, 18, 18);
+            g.FillEllipse(drawBrush, 126, 259, 14, 14);
+            g.FillEllipse(drawBrush, 48, 290, 14, 14);
+            g.FillEllipse(drawBrush, 190, 297, 12, 12);
+            g.FillEllipse(drawBrush, 313, 355, 18, 18);
+            g.DrawLine(drawPen, 138, 138, 120, 180);
+            g.DrawLine(drawPen, 138, 138, 161, 120);
+            g.DrawLine(drawPen, 239, 229, 161, 120);
+            g.DrawLine(drawPen, 239, 229, 319, 55);
+            g.DrawLine(drawPen, 239, 229, 129, 265);
+            g.DrawLine(drawPen, 239, 229, 319, 358);
+            g.DrawLine(drawPen, 319, 55, 319, 358);
+            g.DrawLine(drawPen, 319, 55, 345, 35);
+            g.DrawLine(drawPen, 190, 300, 50, 300);
+            g.DrawLine(drawPen, 190, 300, 319, 358);
+            g.DrawLine(drawPen, 129, 265, 50, 300);
+            Thread.Sleep(300);
+            Refresh();
+            g.Clear(Color.Black);
+            drawPen.Color = Color.Blue;
+            drawBrush.Color = Color.Blue;
+            g.FillEllipse(drawBrush, 130, 130, 18, 18);
+            g.FillEllipse(drawBrush, 153, 112, 16, 16);
+            g.FillEllipse(drawBrush, 112, 172, 14, 14);
+            g.FillEllipse(drawBrush, 312, 51, 17, 17);
+            g.FillEllipse(drawBrush, 340, 31, 12, 12);
+            g.FillEllipse(drawBrush, 232, 223, 18, 18);
+            g.FillEllipse(drawBrush, 126, 259, 14, 14);
+            g.FillEllipse(drawBrush, 48, 290, 14, 14);
+            g.FillEllipse(drawBrush, 190, 297, 12, 12);
+            g.FillEllipse(drawBrush, 313, 355, 18, 18);
+            g.DrawLine(drawPen, 138, 138, 120, 180);
+            g.DrawLine(drawPen, 138, 138, 161, 120);
+            g.DrawLine(drawPen, 239, 229, 161, 120);
+            g.DrawLine(drawPen, 239, 229, 319, 55);
+            g.DrawLine(drawPen, 239, 229, 129, 265);
+            g.DrawLine(drawPen, 239, 229, 319, 358);
+            g.DrawLine(drawPen, 319, 55, 319, 358);
+            g.DrawLine(drawPen, 319, 55, 345, 35);
+            g.DrawLine(drawPen, 190, 300, 50, 300);
+            g.DrawLine(drawPen, 190, 300, 319, 358);
+            g.DrawLine(drawPen, 129, 265, 50, 300);
+            Thread.Sleep(300);
+            Refresh();
+            g.Clear(Color.Black);
+            drawPen.Color = Color.Yellow;
+            drawBrush.Color = Color.Yellow;
+            g.FillEllipse(drawBrush, 130, 130, 18, 18);
+            g.FillEllipse(drawBrush, 153, 112, 16, 16);
+            g.FillEllipse(drawBrush, 112, 172, 14, 14);
+            g.FillEllipse(drawBrush, 312, 51, 17, 17);
+            g.FillEllipse(drawBrush, 340, 31, 12, 12);
+            g.FillEllipse(drawBrush, 232, 223, 18, 18);
+            g.FillEllipse(drawBrush, 126, 259, 14, 14);
+            g.FillEllipse(drawBrush, 48, 290, 14, 14);
+            g.FillEllipse(drawBrush, 190, 297, 12, 12);
+            g.FillEllipse(drawBrush, 313, 355, 18, 18);
+            g.DrawLine(drawPen, 138, 138, 120, 180);
+            g.DrawLine(drawPen, 138, 138, 161, 120);
+            g.DrawLine(drawPen, 239, 229, 161, 120);
+            g.DrawLine(drawPen, 239, 229, 319, 55);
+            g.DrawLine(drawPen, 239, 229, 129, 265);
+            g.DrawLine(drawPen, 239, 229, 319, 358);
+            g.DrawLine(drawPen, 319, 55, 319, 358);
+            g.DrawLine(drawPen, 319, 55, 345, 35);
+            g.DrawLine(drawPen, 190, 300, 50, 300);
+            g.DrawLine(drawPen, 190, 300, 319, 358);
+            g.DrawLine(drawPen, 129, 265, 50, 300);
+            Thread.Sleep(300);
+            Refresh();
+            g.Clear(Color.Black);
+            drawPen.Color = Color.White;
+            drawBrush.Color = Color.White;
+            g.FillEllipse(drawBrush, 130, 130, 18, 18);
+            g.FillEllipse(drawBrush, 153, 112, 16, 16);
+            g.FillEllipse(drawBrush, 112, 172, 14, 14);
+            g.FillEllipse(drawBrush, 312, 51, 17, 17);
+            g.FillEllipse(drawBrush, 340, 31, 12, 12);
+            g.FillEllipse(drawBrush, 232, 223, 18, 18);
+            g.FillEllipse(drawBrush, 126, 259, 14, 14);
+            g.FillEllipse(drawBrush, 48, 290, 14, 14);
+            g.FillEllipse(drawBrush, 190, 297, 12, 12);
+            g.FillEllipse(drawBrush, 313, 355, 18, 18);
+            g.DrawLine(drawPen, 138, 138, 120, 180);
+            g.DrawLine(drawPen, 138, 138, 161, 120);
+            g.DrawLine(drawPen, 239, 229, 161, 120);
+            g.DrawLine(drawPen, 239, 229, 319, 55);
+            g.DrawLine(drawPen, 239, 229, 129, 265);
+            g.DrawLine(drawPen, 239, 229, 319, 358);
+            g.DrawLine(drawPen, 319, 55, 319, 358);
+            g.DrawLine(drawPen, 319, 55, 345, 35);
+            g.DrawLine(drawPen, 190, 300, 50, 300);
+            g.DrawLine(drawPen, 190, 300, 319, 358);
+            g.DrawLine(drawPen, 129, 265, 50, 300);
+            Thread.Sleep(2000);
 
-            //Paragraph about Aquila coming in one line at a time using 2 diffrent fonts 
-
-            //At least 3 different colours used.      
-         
-
+            //Paragraph About Aquila with 2 Diffrent Fonts 
         }
 
        
