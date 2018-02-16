@@ -191,7 +191,7 @@ namespace Aquila_Constellation_
             //Paragraph About Aquila with 2 Diffrent Fonts 
             g.DrawString("Aquila, The Eagle", drawFont, drawBrush, 367, 25);
             drawFont = new Font("Lobster", 14, FontStyle.Bold);
-            g.DrawString("e", drawFont, drawBrush, 367, 100);
+            g.DrawString("e", drawFont, drawBrush, 367, 75);
         }
 
     }
