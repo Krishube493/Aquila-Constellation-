@@ -27,8 +27,7 @@ namespace Aquila_Constellation_
         private void Form1_Click(object sender, EventArgs e)
         {
             //Create Stars 
-            AquilaT.Visible = false;
-            MyName.Visible = false;
+            //Make Front False when front is created!!!!!!!!!
             Graphics g = this.CreateGraphics();
             Font drawFont = new Font("Arial", 25, FontStyle.Bold);
             SolidBrush drawBrush = new SolidBrush(Color.White);
@@ -190,8 +189,8 @@ namespace Aquila_Constellation_
             Thread.Sleep(2000);
 
             //Paragraph About Aquila with 2 Diffrent Fonts 
+
         }
 
-       
     }
 }
