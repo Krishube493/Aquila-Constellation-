@@ -1,7 +1,7 @@
 ﻿/// Aquila 
 /// Created By Kristianna H. 
 /// Feb. 2018
-/// program that informs the user about the star constellation Aquila, The eagle 
+/// A program that informs the user about the star constellation Aquila, The eagle.
 
 using System;
 using System.Collections.Generic;
@@ -27,14 +27,16 @@ namespace Aquila_Constellation_
         private void Form1_Click(object sender, EventArgs e)
         {
             //Create Stars 
-            AquilaT.Visible = false;
-            MyName.Visible = false;
+            starLabel.Visible = false;
+            titleLabel.Visible = false;
+            nameLabel.Visible = false;
             Graphics g = this.CreateGraphics();
-            Font drawFont = new Font("Arial", 25, FontStyle.Bold);
+            Font drawFont = new Font("Copperplate Gothic Bold", 20, FontStyle.Bold);
             SolidBrush drawBrush = new SolidBrush(Color.White);
             Pen drawPen = new Pen(Color.White, 3);
             g.Clear(Color.Black);
             Thread.Sleep(300);
+
             //Draw stars in order of 1,2,7,3,9,5,8,4,10,6
             g.FillEllipse(drawBrush, 130, 130, 18, 18);
             Thread.Sleep(300);           
@@ -57,7 +59,10 @@ namespace Aquila_Constellation_
             g.FillEllipse(drawBrush, 313, 355, 18, 18);
             Thread.Sleep(300);
 
-            //Sound effect!!!!!!!!!
+            //Sound effect
+            SoundPlayer player = new SoundPlayer(Properties.Resources.ShootingStar);
+            player.Play();
+            Thread.Sleep(1000);
 
             //Draw line from star1 to star7,2
             g.DrawLine(drawPen, 138, 138, 120, 180);
@@ -80,7 +85,10 @@ namespace Aquila_Constellation_
             //Draw line from star8 to star4
             g.DrawLine(drawPen, 129, 265, 50, 300);
 
-            //Sound effect!!!!!!!!!!!!!
+            //Sound effect
+            SoundPlayer player2 = new SoundPlayer(Properties.Resources.ComputerSiFi);
+            player2.Play();
+            Thread.Sleep(1000);
 
             //Change colours of stars and lines
             Thread.Sleep(300);
@@ -187,12 +195,18 @@ namespace Aquila_Constellation_
             g.DrawLine(drawPen, 190, 300, 50, 300);
             g.DrawLine(drawPen, 190, 300, 319, 358);
             g.DrawLine(drawPen, 129, 265, 50, 300);
-            Thread.Sleep(2000);
+            Thread.Sleep(1000);
 
             //Paragraph About Aquila with 2 Diffrent Fonts 
-
+            g.DrawString("Aquila, The Eagle", drawFont, drawBrush, 367, 25);
+            drawFont = new Font("Times New Roman", 14, FontStyle.Bold);
+            g.DrawString("Aquila is a constellation on \n the celestial equator. \n Its name is Latin for eagle. \n It represents the bird that \n carried Jupiter's thunderbolts \n in Greak mythology.", drawFont, drawBrush, 367, 75);
+            Thread.Sleep(900);
+            g.DrawString("Aquila was one of the 48 \n constellations described \n by the second-century \n astronomer Ptolemy.", drawFont, drawBrush, 367, 200);
+            Thread.Sleep(900);
+            g.DrawString("In illustrations of Aquila \n that represent it as an eagle, \n a nearly straight line of three \n stars symbolizes part of the wings. \n The center and brightest of \n these three stars is Altair. \n The tips of the wings extend \n further to the southeast \n and northwest. \n The head of the eagle stretches \n off to the southwest.", drawFont, drawBrush, 367, 285);
+            Thread.Sleep(900);
         }
-
-       
+        
     }
 }

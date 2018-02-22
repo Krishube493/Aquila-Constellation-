@@ -74,7 +74,7 @@
             this.Controls.Add(this.starLabel);
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Aquila";
             this.Click += new System.EventHandler(this.Form1_Click);
             this.ResumeLayout(false);
             this.PerformLayout();
