@@ -30,8 +30,7 @@ namespace Aquila_Constellation_
             starLabel.Visible = false;
             titleLabel.Visible = false;
             nameLabel.Visible = false;
-            Graphics g = this.CreateGraphics();
-            Font drawFont = new Font("Copperplate Gothic Bold", 20, FontStyle.Bold);
+            Graphics g = this.CreateGraphics();        
             SolidBrush drawBrush = new SolidBrush(Color.White);
             Pen drawPen = new Pen(Color.White, 3);
             g.Clear(Color.Black);
@@ -198,6 +197,7 @@ namespace Aquila_Constellation_
             Thread.Sleep(1000);
 
             //Paragraph About Aquila with 2 Diffrent Fonts 
+            Font drawFont = new Font("Copperplate Gothic Bold", 20, FontStyle.Bold);
             g.DrawString("Aquila, The Eagle", drawFont, drawBrush, 367, 25);
             drawFont = new Font("Times New Roman", 14, FontStyle.Bold);
             g.DrawString("Aquila is a constellation on \n the celestial equator. \n Its name is Latin for eagle. \n It represents the bird that \n carried Jupiter's thunderbolts \n in Greak mythology.", drawFont, drawBrush, 367, 75);
